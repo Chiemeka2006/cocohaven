@@ -101,3 +101,30 @@ function reservationSectionLanding() {
 }
 
 reservationSectionLanding()
+
+function menu() {
+    const menuBtn = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
+    const line1 = document.querySelector(".line1");
+    const line2 = document.querySelector(".line2");
+    const line3 = document.querySelector(".line3");
+
+    menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        line1.classList.toggle("line1-45deg");
+        line2.classList.toggle("line2-opacity");
+        line3.classList.toggle("line3-45deg");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+            menu.classList.remove("active");
+            line1.classList.remove("line1-45deg");
+            line2.classList.remove("line2-opacity");
+            line3.classList.remove("line3-45deg");
+        }
+    });
+}
+
+menu();
+
