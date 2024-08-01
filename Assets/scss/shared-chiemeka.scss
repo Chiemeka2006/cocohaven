@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+// !Variables
+$clr-primary-white: #ffffff;
+$clr-primary-black: #000000;
+$clr-primary-beige: #f4f1e7;
+$font-family-sora: "Sora", sans-serif;
+
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family-sora;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#active {
+    font-weight: 700;
+}
+
+.header__nav {
+    background-color: $clr-primary-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em .9em;
+
+    & ul {
+        display: flex;
+        gap: 2em;
+
+        & a {
+            color: $clr-primary-black;
+            font-size: .925rem;
+        }
+    }
+
+    &__booking {
+        font-size: .925rem;
+        color: $clr-primary-black;
+        border: 1px solid black;
+        border-radius: 1.5em;
+        padding: .7em 1.5em;
+    }
+}
+
+.header__hero {
+    background-image: url('');
+}

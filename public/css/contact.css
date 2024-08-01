@@ -1,0 +1,202 @@
+@charset "UTF-8";
+:root {
+  /* Step -2: 11.1111px → 12.8px */
+  --step--2: clamp(0.6944rem, 0.6577rem + 0.1836vi, 0.8rem);
+  /* Step -1: 13.3333px → 16px */
+  --step--1: clamp(0.8333rem, 0.7754rem + 0.2899vi, 1rem);
+  /* Step 0: 16px → 20px */
+  --step-0: clamp(1rem, 0.913rem + 0.4348vi, 1.25rem);
+  /* Step 1: 19.2px → 25px */
+  --step-1: clamp(1.2rem, 1.0739rem + 0.6304vi, 1.5625rem);
+  /* Step 2: 23.04px → 31.25px */
+  --step-2: clamp(1.44rem, 1.2615rem + 0.8924vi, 1.9531rem);
+  /* Step 3: 27.648px → 39.0625px */
+  --step-3: clamp(1.728rem, 1.4799rem + 1.2407vi, 2.4414rem);
+  /* Step 4: 33.1776px → 48.8281px */
+  --step-4: clamp(2.0736rem, 1.7334rem + 1.7011vi, 3.0518rem);
+  /* Step 5: 39.8131px → 61.0352px */
+  --step-5: clamp(2.4883rem, 2.027rem + 2.3067vi, 3.8147rem);
+}
+
+main {
+  margin-top: 83.55px;
+}
+main > * > * {
+  width: min(1336px, 93%);
+  margin-inline: auto;
+}
+
+header {
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+}
+
+footer .footer {
+  width: min(1336px, 93%);
+}
+
+.move-up-textarea {
+  transform: translateY(-187px);
+}
+
+.move-up {
+  top: -21.7px !important;
+}
+
+.hero {
+  margin-block: 4em;
+}
+.hero__layout__p {
+  font-size: var(--step--1);
+  letter-spacing: 0.5px;
+  padding-left: 0.1em;
+  margin-bottom: 0.1em;
+  color: rgba(0, 0, 0, 0.689);
+}
+.hero__layout__h1 {
+  font-size: var(--step-4);
+  font-weight: 400;
+  width: min(760px, 95%);
+  line-height: 67px;
+  margin-bottom: 1em;
+}
+.hero__layout__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+}
+.hero__layout__grid > img {
+  width: 100%;
+  height: 627.91px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__layout__grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em 2em;
+  align-self: center;
+}
+.hero__layout__grid__container .fname,
+.hero__layout__grid__container .message {
+  grid-column: span 2;
+}
+.hero__layout__grid__container > div {
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.hero__layout__grid__container > div .label-input {
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  left: 0;
+  top: 5px;
+  pointer-events: none;
+}
+.hero__layout__grid__container > div .label-textarea {
+  bottom: 5px;
+  position: absolute;
+  transition: 0.35s ease-in-out;
+  left: 0;
+  pointer-events: none;
+}
+.hero__layout__grid__container > div input {
+  border: none;
+  outline: none;
+  padding-bottom: 0.7em;
+  width: 100%;
+}
+.hero__layout__grid__container > div input:focus + label {
+  top: -21.7px;
+}
+.hero__layout__grid__container > div textarea {
+  border: none;
+  padding-top: 1.2em;
+  outline: none;
+  padding-bottom: 0.7em;
+  width: 100%;
+}
+.hero__layout__grid__container > div textarea:focus + label {
+  transform: translateY(-187px);
+}
+
+.popup {
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 20em;
+  border: none;
+  border-radius: 0.8em;
+  margin-top: -2em;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.popup::backdrop {
+  background: rgba(0, 0, 0, 0.292);
+}
+.popup__wrapper {
+  padding: 1.7em 2em 2em;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  box-shadow: 2px 2px 4px #ffffff;
+}
+.popup__wrapper__container {
+  justify-self: center;
+  background: linear-gradient(275deg, #2a8a56, #34aa6c);
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1em;
+}
+.popup__wrapper__container__img {
+  width: 2.3em;
+  height: 2.3em;
+}
+.popup__wrapper__h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.popup__wrapper__p {
+  margin-block: 1em 1.5em;
+  font-size: 0.925rem;
+  line-height: 20px;
+}
+.popup__wrapper__p .date,
+.popup__wrapper__p .time {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.popup__wrapper__btn {
+  background-color: #ffffff;
+  padding: 0.7em;
+  width: 15em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border: 1px solid black;
+  margin-inline: auto;
+}
+.popup__wrapper__btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dialog-open {
+  opacity: 1;
+  margin-top: 0;
+  transition: 0.35s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__layout__grid {
+    grid-template-columns: 1fr;
+    display: none;
+  }
+  .hero__layout__grid__container {
+    display: grid;
+  }
+}/*# sourceMappingURL=contact.css.map */

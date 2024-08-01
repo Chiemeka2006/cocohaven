@@ -1,0 +1,257 @@
+function reservationSectionLanding() {
+    let input = document.querySelectorAll(".input");
+    let label = document.querySelectorAll(
+        ".reservation__container__booking__form__input label"
+    );
+
+    input.forEach((inputs, i) => {
+        // input[i].addEventListener("focus", () => {
+        //     label[i].classList.add("move-up");
+        //     console.log("working");
+        // });
+
+        input[i].addEventListener("input", () => {
+            let inputValue = input[i].value;
+            if (inputValue !== "") {
+                // console.log('value-empty')
+                label[i].classList.add('move-up')
+            }else {
+                label[i].classList.remove('move-up')
+            }
+            // inputValue === 'ok';
+            //  inputValue = ''
+            console.log(typeof inputValue);
+            // if (inputValue === '') {
+            //     console.log('empty')
+            //     label[i].classList.remove('move-up')
+            // } else {
+            //     console.log('Full')
+            //     label[i].classList.add("move-up");
+            // }
+            // document.body.addEventListener('click', (event) => {
+            //     if(!input[i].contains(event.target) && inputValue === "" ) {
+            //         label[i].classList.remove("move-up");
+            //     } else if (!input[i].contains(event.target)  || inputValue === "") {
+            //         label[i].classList.add("move-up");
+            //     }
+            // })
+
+            // WISDOM EXPERIMENTS
+
+            // document.body.addEventListener("click", (event) => {
+            //           if (!input[i].contains(event.target) && inputValue === "" ) {
+            //               label[i].classList.remove("move-up");
+            //           }
+            //         }
+            //       });
+
+            // input[i].addEventListener("focusout", () => {
+            //     if (input[i].value === "") { 
+            //         console.log("EMPTY");
+            //         label[i].classList.remove("move-up");
+            //     }
+            // });
+        });
+    });
+}
+
+reservationSectionLanding();
+
+
+
+/* GENERAL STYLES */
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: maroon;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+/* HAMBURGER 1 */
+.checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+
+
+
+<div class="container">
+
+        <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+        <label for="checkbox1">
+            <div class="hamburger hamburger1">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
+
+
+
+
+        //first 
+        var McButton = $("[data=hamburger-menu]");
+var McBar1 = McButton.find("b:nth-child(1)");
+var McBar2 = McButton.find("b:nth-child(2)");
+var McBar3 = McButton.find("b:nth-child(3)");
+
+
+
+McButton.click( function() {
+  $(this).toggleClass("active");
+  
+  if (McButton.hasClass("active")) {
+    McBar1.velocity({ top: "50%" }, {duration: 200, easing: "swing"});
+    McBar3.velocity({ top: "50%" }, {duration: 200, easing: "swing"})
+          .velocity({rotateZ:"90deg"}, {duration: 800, delay: 200, easing: [500,20] });
+    McButton.velocity({rotateZ:"135deg"}, {duration: 800, delay: 200, easing: [500,20] });
+  } else {
+    McButton.velocity("reverse");
+    McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] })
+          .velocity({ top: "100%" }, {duration: 200, easing: "swing"});
+    McBar1.velocity("reverse", {delay: 800});
+  }
+});
+
+
+
+
+/*$element.velocity({ 
+    width: "500px",
+    property2: value2
+}, {
+    duration: 400,
+    easing: "swing",
+    queue: "",
+    begin: undefined,
+    progress: undefined,
+    complete: undefined,
+    display: undefined,
+    visibility: undefined,
+    loop: false,
+    delay: false,
+    mobileHA: true
+});*/
+
+
+
+
+class
+
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsla( 355, 75%, 56%, 1 );
+}
+
+/* Hamburger Menu */
+.McButton {
+  @bar-w: 44px;
+  @bar-h: 3px;
+  @bar-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -(@bar-w /2);
+  margin-top: -(@bar-w /2);
+  width: @bar-w;
+  height: (@bar-w *3) /4;
+  cursor: pointer;
+  
+  b {
+    position: absolute;
+    left: 0;
+    width: @bar-w;
+    height: @bar-h;
+    background-color: @bar-color;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 50%;
+    }
+    &:nth-child(3) {
+      top: 100%;
+    }
+  }
+}/* McButton */
+
+
+
+
+html
+<a class="McButton" data="hamburger-menu">
+  <b></b>
+  <b></b>
+  <b></b>
+</a>
+
+jax slayher

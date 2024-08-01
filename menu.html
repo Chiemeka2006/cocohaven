@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="public/css/shared.css" />
+        <link rel="stylesheet" href="public/css/menu.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="header__nav header__nav--desktop">
+                <a href="index.html">
+                    <img src="assets/Media/icons/Logo.svg" alt="Logo" />
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li id="active"><a href="menu.html">Menu</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <!-- <li><a href=""></a></li> -->
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#reservation" class="header__nav__booking shop--btn"
+                    >Book a Table</a
+                >
+            </nav>
+            <nav class="header__nav header__nav--mobile">
+                <a href="index.html">
+                    <img src="assets/Media/icons/Logo.svg" alt="Logo" />
+                </a>
+                <ul class="menu">
+                    <div>
+                        <li id="active home-link">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <!-- <li><a href=""></a></li> -->
+                        <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                        
+                        <li>
+                            <a
+                                href="#reservation"
+                                class="header__nav__booking shop--btn"
+                                >Book a Table</a
+                            >
+                        </li>
+                    </div>
+                </ul>
+                <section class="menu-btn">
+                    <div class="menu1 hamburger1">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <article>
+                    <p>Our Menu</p>
+                    <h2>Taste Sensations</h2>
+                    <article class="hero__grid">
+                        <div class="hero__grid__container">
+                            <img
+                                src="Assets/Media/images/classic-espresso.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Classic Espresso
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $4.25
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Freshly ground espresso beans, hot water
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__grid__container">
+                            <img
+                                src="/Assets/Media/images/baked-pastries.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Freshly Baked Pastries
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $2.90
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Muffins, scones, and danishes
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__grid__container">
+                            <img
+                                src="/Assets/Media/images/cappucino.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Cappuccino
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $500
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Espresso, steamed milk, milk foam
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__grid__container">
+                            <img
+                                src="/Assets/Media/images/sparkling-espresso.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Sparkling Espresso
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $4.30
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Espresso, sparkling water, sweetener, ice
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__grid__container">
+                            <img
+                                src="/Assets/Media/images/herbal-infusion.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Herbal Infusions
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $3.56
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Herbal teas, peppermint, or rooibos
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__grid__container">
+                            <img
+                                src="/Assets/Media/images/hazelnut cappucino.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Hazelnut Cappuccino
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $3.23
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Espresso, milk, hazelnut syrup, milk foam
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__grid__container">
+                            <img
+                                src="/Assets/Media/images/hot-chocolate.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Hot Chocolate
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $4.50
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Cocoa powder, milk, whipped cream
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hero__grid__container">
+                            <img
+                                src="/Assets/Media/images/coconut-mocha.jpg"
+                                alt=""
+                                class="hero__grid__container__img" />
+                            <div class="hero__grid__container__text">
+                                <div class="hero__grid__container__text__head">
+                                    <h3
+                                        class="hero__grid__container__text__head__h3">
+                                        Coconut Mocha
+                                    </h3>
+                                    <p
+                                        class="hero__grid__container__text__head__p">
+                                        $5.60
+                                    </p>
+                                </div>
+                                <p class="hero__grid__container__text__p">
+                                    Coconut syrup, chocolate syrup,cream
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </section>
+            <section class="menu">
+                <article class="menu__layout">
+                    <h2 class="menu__layout__h2">Enjoy Delicious Meals</h2>
+                    <article class="menu__layout__grid">
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Almond Bliss Frost
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Vanilla syrup, Espresso, Almond milk, Ice
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $5.58
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Cappuccino Delight
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Espresso, Milk, Cinnamon, Flavor syrup
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $4.55
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Iced Vanilla Almond Latte
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Cold brew, Almond milk, Vanilla syrup
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $4.22
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Smooth Black Cold Brew
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Coffee, Sweetener, Milk or Cream, Ice
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $3.56
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Creamy Caramel Cold Brew
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Cold brew, Milk/Cream, Caramel syrup, Ice
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $4.55
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Creamy Mocha Cappuccino
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Espresso, Milk, Chocolate syrup, Cream
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $4.58
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Caramel Chai Latte
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Chai tea, Macadamia milk, Caramel syrup
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $5.55
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu__layout__grid__container">
+                            <div class="menu__layout__grid__container__text">
+                                <h3
+                                    class="menu__layout__grid__container__text__h3">
+                                    Coconut Cold brew
+                                </h3>
+                                <p
+                                    class="menu__layout__grid__container__text__p">
+                                    Espresso, Coconut Milk, Maple syrup
+                                </p>
+                            </div>
+                            <div class="menu__layout__grid__container__price">
+                                <p
+                                    class="menu__layout__grid__container__price__p">
+                                    $5.58
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </section>
+            <section class="reservation" id="reservation">
+                <article class="reservation__container">
+                <article class="reservation__container__booking__text">
+                            <h2
+                                class="reservation__container__booking__text__h2 section--title">
+                                Reserve Your Table
+                            </h2>
+                </article>
+                        <form
+                            autocomplete="on"
+                            action=""
+                            class="reservation__container__booking__form">
+                            <div
+                                class="reservation__container__booking__form__input reservation__container__booking__form__input--text">
+                                <input type="text" class="input" />
+                                <label for="">Full Name</label>
+                            </div>
+                            <div
+                                class="reservation__container__booking__form__input reservation__container__booking__form__input--email">
+                                <input
+                                    type="text"
+                                    name="email"
+                                    id=""
+                                    class="input" />
+                                <label for="">Email</label>
+                            </div>
+                            <div
+                                class="reservation__container__booking__form__input reservation__container__booking__form__input--number">
+                                <input
+                                    type="text"
+                                    name="phone"
+                                    id=""
+                                    class="input" />
+                                <label for="">Phone</label>
+                            </div>
+                            <div
+                                class="reservation__container__booking__form__input reservation__container__booking__form__input--date">
+                                <input
+                                    type="text"
+                                    name="date"
+                                    id=""
+                                    class="input input-date" />
+                                <label for="">Date</label>
+                                <img
+                                    src="Assets/Media/icons/uit--calender.svg"
+                                    alt="calender-icon" />
+                            </div>
+                            <div
+                                class="reservation__container__booking__form__input reservation__container__booking__form__input--time">
+                                <input
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    class="input input-time" />
+                                <label for="">Time</label>
+                                <img
+                                    src="Assets/Media/icons/bitcoin-icons--clock-outline.svg"
+                                    alt="clock-icon" />
+                            </div>
+                            <button
+                                type="button"
+                                class="reservation__container__booking__shop shop--btn">
+                                Book Now
+                            </button>
+                        </form>
+                    </div>
+                    <dialog class="popup">
+                        <div class="popup__wrapper">
+                            <div class="popup__wrapper__container">
+                                <img
+                                    src="Assets/Media/icons/check-svgrepo-com.svg"
+                                    alt=""
+                                    class="popup__wrapper__container__img" />
+                            </div>
+                            <h2 class="popup__wrapper__h2">Thank You!</h2>
+                            <p class="popup__wrapper__p">
+                                Your reservation on
+                                <span class="date"></span> at
+                                <span class="time"></span> has been successfully
+                                booked
+                            </p>
+                            <button class="popup__wrapper__btn">
+                                Continue
+                            </button>
+                        </div>
+                    </dialog>
+                    </article>
+            </section>
+            <section class="feature">
+                <article class="feature__grid">
+                    <div class="feature__grid__container">
+                        <img src="Assets/Media/icons/coffee-bean.svg" alt="" class="feature__grid__container__img">
+                        <div class="feature__grid__container__text">
+                            <h3 class="feature__grid__container__text__h3">Good Quality</h3>
+                            <p class="feature__grid__container__text__p">Exceptional Quality at Espresso House</p>
+                        </div>
+                    </div>
+                    <div class="feature__grid__container">
+                        <img src="Assets/Media/icons/paper-bag.svg" alt="" class="feature__grid__container__img">
+                        <div class="feature__grid__container__text">
+                            <h3 class="feature__grid__container__text__h3">Variety Beverages</h3>
+                            <p class="feature__grid__container__text__p">Embracing the World of Beverages</p>
+                        </div>
+                    </div>
+                    <div class="feature__grid__container">
+                        <img src="Assets/Media/icons/coffee-maker.svg" alt="" class="feature__grid__container__img">
+                        <div class="feature__grid__container__text">
+                            <h3 class="feature__grid__container__text__h3">Super Coffee Machines</h3>
+                            <p class="feature__grid__container__text__p">Exceptional Quality at Espresso House</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="collage">
+                <article class="collage__grid">
+                    <a
+                        href="instagram.com"
+                        class="collage__grid__wrapper collage__grid__wrapper--span2">
+                        <div class="collage__grid__wrapper__icon-container">
+                            <img
+                                src="Assets/Media/icons/lucide--instagram.svg"
+                                alt="" />
+                        </div>
+                        <img
+                            src="Assets/Media/images/coffee-into-cup-on-plate.jpg"
+                            alt=""
+                            class="collage__grid__wrapper__img" />
+                    </a>
+                    <a href="instagram.com" class="collage__grid__wrapper">
+                        <div class="collage__grid__wrapper__icon-container">
+                            <img
+                                src="Assets/Media/icons/lucide--instagram.svg"
+                                alt="" />
+                        </div>
+                        <img
+                            src="Assets/Media/images/coffee-with-syrup.jpg"
+                            alt=""
+                            class="collage__grid__wrapper__img" />
+                    </a>
+                    <a href="instagram.com" class="collage__grid__wrapper">
+                        <div class="collage__grid__wrapper__icon-container">
+                            <img
+                                src="Assets/Media/icons/lucide--instagram.svg"
+                                alt="" />
+                        </div>
+                        <img
+                            src="Assets/Media/images/coffee-filter.jpg"
+                            alt=""
+                            class="collage__grid__wrapper__img" />
+                    </a>
+                    <a href="instagram.com" class="collage__grid__wrapper">
+                        <div class="collage__grid__wrapper__icon-container">
+                            <img
+                                src="Assets/Media/icons/lucide--instagram.svg"
+                                alt="" />
+                        </div>
+                        <img
+                            src="Assets/Media/images/coffeewithspoon.jpg"
+                            alt=""
+                            class="collage__grid__wrapper__img" />
+                    </a>
+                    <a href="instagram.com" class="collage__grid__wrapper">
+                        <div class="collage__grid__wrapper__icon-container">
+                            <img
+                                src="Assets/Media/icons/lucide--instagram.svg"
+                                alt="" />
+                        </div>
+                        <img
+                            src="Assets/Media/images/coffeewithcola.jpg"
+                            alt=""
+                            class="collage__grid__wrapper__img" />
+                    </a>
+                </article>
+            </section>
+        </main>
+        <footer id="footer">
+            <section class="footer">
+                <article class="footer__grid">
+                    <div class="footer__grid__subscribe">
+                        <img src="Assets/Media/icons/Logo2.svg" alt="" />
+                        <div class="footer__grid__subscribe__input">
+                            <img
+                                src="Assets/Media/icons/envelope-regular.svg"
+                                alt="" />
+                            <input
+                                type="text"
+                                placeholder="Your email"
+                                class="footer__grid__subscribe__input__text" />
+                            <input
+                                type="button"
+                                class="footer__grid__subscribe__input__btn"
+                                value="Subscribe" />
+                        </div>
+                    </div>
+                    <ul class="footer__grid__link">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                    </ul>
+                    <ul class="footer__grid__link-about">
+                        <li><a href="">Style Guide </a></li>
+                        <li><a href="">Licensing</a></li>
+                        <li><a href="">Changelog</a></li>
+                        <li><a href="">Error 404</a></li>
+                        <li><a href="">Password </a></li>
+                        <li><a href="">Privacy Policy </a></li>
+                        <li><a href="">Reservation Policy</a></li>
+                    </ul>
+                    <ul class="footer__grid__location">
+                        <li class="footer__grid__location__address">
+                            52 Libreville Cres, Wuse 2, Abuja 904101, Federal
+                            Capita Territory
+                        </li>
+                        <li class="footer__grid__location__number">
+                            +234 903 7299 789
+                        </li>
+                        <li class="footer__grid__location__email">
+                            espressocoffeehouse@gmail.com
+                        </li>
+                    </ul>
+                </article>
+                <article class="footer__social-media">
+                    <p class="footer__social-media__p">
+                        Designed by Chiemeka. Powered by Webflow.
+                    </p>
+                    <div class="footer__social-media__container">
+                        <a
+                            href="twitter.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/ri--twitter-x-fill.svg" alt="" /> -->
+                            <svg
+                                class="fill"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24">
+                                <path
+                                    fill="white"
+                                    d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                            </svg>
+                        </a>
+                        <a
+                            href="facebook.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/dashicons--facebook-alt.svg" alt="" /> -->
+                            <svg
+                                class="fill"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1.2em"
+                                height="1.2em"
+                                viewBox="0 0 20 20">
+                                <path
+                                    fill="white"
+                                    d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11c-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46z" />
+                            </svg>
+                        </a>
+                        <a
+                            href="youtube.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/simple-icons--youtube.svg" alt="" /> -->
+                            <svg
+                                class="fill"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24">
+                                <path
+                                    fill="white"
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.545 15.568V8.432L15.818 12z" />
+                            </svg>
+                        </a>
+                        <a
+                            href="instagram.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/lucide--instagram2.svg" alt="" /> -->
+                            <svg
+                                class="stroke"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24">
+                                <g
+                                    fill="none"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <rect
+                                        width="20"
+                                        height="20"
+                                        x="2"
+                                        y="2"
+                                        rx="5"
+                                        ry="5" />
+                                    <path
+                                        d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01" />
+                                </g>
+                            </svg>
+                        </a>
+                        <!-- <div class="footer__social-media__container__icons">
+                            <img src="" alt="" />
+                        </div> -->
+                    </div>
+                </article>
+            </section>
+        </footer>
+
+        <script src="Assets/js/script.js"></script>
+    </body>
+</html>
+<!-- 482-529 -->

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="public/css/shared.css" />
+        <link rel="stylesheet" href="public/css/contact.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="header__nav header__nav--desktop">
+                <a href="index.html">
+                    <img src="assets/Media/icons/Logo.svg" alt="Logo" />
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href=""></a></li> -->
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li id="active"><a href="contact.html">Contact</a></li>
+
+                </ul>
+                <a href="#book-table" class="header__nav__booking shop--btn"
+                    >Book a Table</a
+                >
+            </nav>
+            <nav class="header__nav header__nav--mobile">
+                <a href="index.html">
+                    <img src="assets/Media/icons/Logo.svg" alt="Logo" />
+                </a>
+                <ul class="menu">
+                    <div>
+                        <li id="active home-link">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <li><a href=""></a></li> -->
+                        <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                        <li>
+                            <a
+                                href="#book-table"
+                                class="header__nav__booking shop--btn"
+                                >Book a Table</a
+                            >
+                        </li>
+                    </div>
+                </ul>
+                <section class="menu-btn">
+                    <div class="menu1 hamburger1">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </div>
+                </section>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <article class="hero__layout">
+                    <p class="hero__layout__p">Contact Us</p>
+                    <h1 class="hero__layout__h1">Get in touch</h1>
+
+                    <article class="hero__layout__grid">
+                        <img src="Assets/Media/images/pexels-pixabay-236698.jpg" alt="">
+                        <form class="hero__layout__grid__container">
+                            <div class="fname">
+                            <input type="text" class="fullname hero__layout__grid__container__input input"><label class="label-input" for="">Full Name</label></div>
+                            <div>
+                            <input type="text" class="hero__layout__grid__container__input input"><label class="label-input" for="">Email</label></div>
+                            <div>
+                            <input type="text" class="hero__layout__grid__container__input input"><label class="label-input" for="">Phone</label></div>
+                            <div class="message">
+                            <textarea name="" cols="30" rows="10" class="hero__layout__grid__container__textarea"></textarea><label id="label-textarea" class="label-textarea" for="">Message</label></div>
+                            <button type="button" class="dialog-btn shop--btn">Book now</button>
+                            
+                            
+                            
+                            
+                        </div>
+                    </article>
+                </article>
+                <dialog class="popup">
+                        <div class="popup__wrapper">
+                            <div class="popup__wrapper__container">
+                                <img
+                                    src="Assets/Media/icons/check-svgrepo-com.svg"
+                                    alt=""
+                                    class="popup__wrapper__container__img" />
+                            </div>
+                            <h2 class="popup__wrapper__h2">Thank You!</h2>
+                            <p class="popup__wrapper__p">
+                                Your reservation on
+                                <span class="date"></span> at
+                                <span class="time"></span> has been successfully
+                                booked
+                            </p>
+                            <button class="popup__wrapper__btn">
+                                Continue
+                            </button>
+                        </div>
+                    </dialog>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <section class="footer">
+                <article class="footer__grid">
+                    <div class="footer__grid__subscribe">
+                        <img src="Assets/Media/icons/Logo2.svg" alt="" />
+                        <div class="footer__grid__subscribe__input">
+                            <img
+                                src="Assets/Media/icons/envelope-regular.svg"
+                                alt="" />
+                            <input
+                                type="text"
+                                placeholder="Your email"
+                                class="footer__grid__subscribe__input__text" />
+                            <input
+                                type="button"
+                                class="footer__grid__subscribe__input__btn"
+                                value="Subscribe" />
+                        </div>
+                    </div>
+                    <ul class="footer__grid__link">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="footer__grid__link-about">
+                        <li><a href="">Style Guide </a></li>
+                        <li><a href="">Licensing</a></li>
+                        <li><a href="">Changelog</a></li>
+                        <li><a href="">Error 404</a></li>
+                        <li><a href="">Password </a></li>
+                        <li><a href="">Privacy Policy </a></li>
+                        <li><a href="">Reservation Policy</a></li>
+                    </ul>
+                    <ul class="footer__grid__location">
+                        <li class="footer__grid__location__address">
+                            52 Libreville Cres, Wuse 2, Abuja 904101, Federal
+                            Capita Territory
+                        </li>
+                        <li class="footer__grid__location__number">
+                            +234 903 7299 789
+                        </li>
+                        <li class="footer__grid__location__email">
+                            cocohaven@gmail.com
+                        </li>
+                    </ul>
+                </article>
+                <article class="footer__social-media">
+                    <p class="footer__social-media__p">
+                        Designed by Chiemeka. Powered by Webflow.
+                    </p>
+                    <div class="footer__social-media__container">
+                        <a
+                            href="twitter.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/ri--twitter-x-fill.svg" alt="" /> -->
+                            <svg
+                                class="fill"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24">
+                                <path
+                                    fill="white"
+                                    d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                            </svg>
+                        </a>
+                        <a
+                            href="facebook.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/dashicons--facebook-alt.svg" alt="" /> -->
+                            <svg
+                                class="fill"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1.2em"
+                                height="1.2em"
+                                viewBox="0 0 20 20">
+                                <path
+                                    fill="white"
+                                    d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11c-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46z" />
+                            </svg>
+                        </a>
+                        <a
+                            href="youtube.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/simple-icons--youtube.svg" alt="" /> -->
+                            <svg
+                                class="fill"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24">
+                                <path
+                                    fill="white"
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.545 15.568V8.432L15.818 12z" />
+                            </svg>
+                        </a>
+                        <a
+                            href="instagram.com"
+                            class="footer__social-media__container__icons">
+                            <!-- <img src="Assets/Media/icons/lucide--instagram2.svg" alt="" /> -->
+                            <svg
+                                class="stroke"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                viewBox="0 0 24 24">
+                                <g
+                                    fill="none"
+                                    stroke="white"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <rect
+                                        width="20"
+                                        height="20"
+                                        x="2"
+                                        y="2"
+                                        rx="5"
+                                        ry="5" />
+                                    <path
+                                        d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01" />
+                                </g>
+                            </svg>
+                        </a>
+                        <!-- <div class="footer__social-media__container__icons">
+                            <img src="" alt="" />
+                        </div> -->
+                    </div>
+                </article>
+            </section>
+        </footer>
+
+        <script src="Assets/js/contact.js"></script>
+    </body>
+</html>
+<!-- 256 -309 -->
