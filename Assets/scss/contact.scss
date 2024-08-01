@@ -231,7 +231,7 @@ footer .footer {
 @media only screen and (max-width: 1000px) {
     .hero__layout__grid {
         grid-template-columns: 1fr;
-        display: none;
+        // display: none;
 
         &__container {
             display: grid;
